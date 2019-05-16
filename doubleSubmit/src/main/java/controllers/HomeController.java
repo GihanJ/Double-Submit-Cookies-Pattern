@@ -17,9 +17,9 @@ public class HomeController extends HttpServlet
 	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 	{
-		String hiddenToken = request.getParameter("token");
+		String formToken = request.getParameter("token"); //getting the token from the submitted form parameters
 	    Optional<String> cookieValue = Stream.of(request.getCookies()).filter(c -> c.getName().equalsIgnoreCase("CSRF_TOKEN")).map(Cookie::getValue).findFirst();
-	    String csrfToken = cookieValue.get();
+	    String cookieToken = cookieValue.get(); //getting the token from the cookie
 	 
 	    response.setContentType("text/html");
 	    PrintWriter out = response.getWriter();
@@ -31,7 +31,7 @@ public class HomeController extends HttpServlet
     	out.println("</head>");
     	out.println("<body>");
     	
-	    if (csrfToken.equals(hiddenToken))
+	    if (cookieToken.equals(formToken)) //comparing cookies
 	    {
 	    	out.println("<script>");
 	        out.println("Swal.fire(\r\n" + 

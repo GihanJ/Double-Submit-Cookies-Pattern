@@ -31,6 +31,7 @@
 	</div>
 	
 	<script type="text/javascript">
+	//getting the token value from the cookie
 	function getCookie(cname) {
 	    var name = cname + "=";
 	    var ca = document.cookie.split(';');
@@ -46,7 +47,7 @@
 	    return "";
 	}
 
-
+	//appending the token as a hidden input field
 	function appendCookieValue() {
 	    var valll = getCookie("CSRF_TOKEN");
 	    if (valll != "") {
