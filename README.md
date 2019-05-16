@@ -3,7 +3,7 @@ Beginner level implementation of CSRF double submit cookies pattern (Java)
 # How to Run?
 Build the project using mvn clean install
 
-Run on server
+Run As --> Run on Server
 
 To access the web application http://localhost:8080/doubleSubmit/
 
