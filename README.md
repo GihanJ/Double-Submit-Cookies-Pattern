@@ -1,6 +1,6 @@
 # Double-Submit-Cookies-Pattern
 Beginner level implementation of CSRF double submit cookies pattern (Java) 
-# How to Run?
+# How to Execute?
 Build the project using mvn clean install
 
 Run As --> Run on Server
