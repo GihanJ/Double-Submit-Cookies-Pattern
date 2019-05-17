@@ -13,4 +13,5 @@ NOTE : After doing the maven update if HomeController.java give an error ,move t
 
 # Used Technologies
 Java,JavaScript,Eclipse IDE for Enterprise Java Developers(Version: 2019-03 (4.11.0)),apache-tomcat-7.0.94
-Bootstrap v4.3.1 , SweetAlert2
+
+Bootstrap v4.3.1,SweetAlert2
